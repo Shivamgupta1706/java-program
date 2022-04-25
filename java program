@@ -1,0 +1,19 @@
+package practice;
+ class Child extends Parent
+{
+int b;
+	public Child(){
+	System.out.println("base child class default constructor");
+}
+
+	public Child(int a, int b){
+		super(a);	
+		this.b=b;
+		System.out.println("child class parameterized constructor");
+	}
+	public void dispchild()
+	{
+		super.dispParent();
+		System.out.println("b ="+b);
+	}
+}
